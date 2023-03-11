@@ -3,6 +3,6 @@ let monObjet = {
     prenom : 'hean',
 }
 
-tab = [monObjet]
+tab = [monObjet.age, monObjet.prenom]
 
-console.log(tab[1].age);
+console.log(tab);

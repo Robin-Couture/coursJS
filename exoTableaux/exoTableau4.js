@@ -1,4 +1,4 @@
-const tabFruit = ["Fraise", "Pomme", "Ananas", "Poire", "Kiwi"]
+const tabFruit = ["Fraise", "Pomme", "Ananas", "Poire", "Kiwi"];
 
-tabFruit.push("Orange")
-console.log(tabFruit)
+tabFruit.push("Orange");
+console.log(tabFruit);

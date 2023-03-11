@@ -7,5 +7,5 @@ for(index = 0; index < 10; index++){
 min = Math.min(...tabRandom);
 max = Math.max(...tabRandom);
 
-console.log(tabRandom);
+console.log("Nombres dans la liste :", tabRandom);
 console.log("Min =", min, "Max =", max);

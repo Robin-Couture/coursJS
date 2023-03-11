@@ -1,6 +1,6 @@
-const Pays = ["France", "Espagne", "Italie"]
+const Pays = ["France", "Espagne", "Italie"];
 
-console.log(Pays)
-Pays.sort()
-console.log(Pays)
+console.log("Liste de pays avant le tri :", Pays);
+Pays.sort();
+console.log("Liste de pays après le tri :", Pays);
 
