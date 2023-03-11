@@ -4,8 +4,8 @@ function triMot(tableau){
     const tab2 = [];
 
     for(index = 0; index < tableau.length; index++){
-        let tempTab = [tableau[index].split('')];
-        tab2.push(tempTab.join());
+        let tabTemporaire = [tab[index].split('').sort().join('')];
+        tab2.push(tabTemporaire);
     }
     return tab2;
 }
