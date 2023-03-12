@@ -1,8 +1,38 @@
-let monObjet = {
-    age : 12,
-    prenom : 'hean',
+let personne1 = {
+    age : 87,
+    prenom : 'jean',
 }
 
-tab = [monObjet.age, monObjet.prenom]
+let personne2 = {
+    age : 23,
+    prenom : 'eric',
+}
 
-console.log(tab);
+let personne3 = {
+    age : 54,
+    prenom : 'samuel',
+}
+
+let personne4 = {
+    age : 45,
+    prenom : 'michel',
+}
+
+tab = [personne1, personne2, personne3, personne4]
+
+function afficherInfo(tableau, clé){
+    let tabSortie = [];
+    for(index = 0; index < tableau.length; index++){
+        for (const key in tableau[index]) {
+            const element = key;
+            if(element === clé){
+                tabSortie[index] = tableau[index][key];
+            }
+        }
+    }
+
+    console.log(tabSortie)
+    return tabSortie
+}
+
+afficherInfo(tab, 'prenom');
