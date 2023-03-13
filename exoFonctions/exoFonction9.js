@@ -18,4 +18,9 @@ function compteurVoyelle(texte){
     return compteur;
 }
 
+function countVowel(texte){
+    return texte.match(/[aeiouy]/gi || []).length;
+}
+
 console.log("Nombre de voyelle dans le texte:", compteurVoyelle(loremIpsum));
+console.log(countVowel(loremIpsum));

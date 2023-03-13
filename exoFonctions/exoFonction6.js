@@ -1,24 +1,9 @@
-let personne1 = {
-    age : 87,
-    prenom : 'jean',
-}
-
-let personne2 = {
-    age : 23,
-    prenom : 'eric',
-}
-
-let personne3 = {
-    age : 54,
-    prenom : 'samuel',
-}
-
-let personne4 = {
-    age : 45,
-    prenom : 'michel',
-}
-
-tab = [personne1, personne2, personne3, personne4]
+const tab = [
+   {age : 87, prenom : "Jean"},
+   {age : 23, prenom : "Eric"},
+   {age : 54, prenom : "Samuel"},
+   {age : 45, prenom : "Michel"},
+]
 
 function afficherInfo(tableau, clé){
     let tabSortie = [];
@@ -31,8 +16,8 @@ function afficherInfo(tableau, clé){
         }
     }
 
-    console.log(tabSortie)
-    return tabSortie
+    console.log(tabSortie);
+    return tabSortie;
 }
 
 afficherInfo(tab, 'prenom');

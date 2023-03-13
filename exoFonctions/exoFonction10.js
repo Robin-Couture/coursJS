@@ -1,6 +1,6 @@
-let citationRoiHeenok = "ils tirent aucun revenu... ou est l'hydroponique ?"
+let citationRoiHeenok = "ils tirent aucun revenu... ou est l'hydroponique ?";
 
-function voyelleMaj(texte){
+function consonneMaj(texte){
     let texte2 = [];
     for(index = 0; index < texte.length; index++){
         if(texte[index] == 'a' || texte[index] == 'e' || texte[index] == 'i' || 
@@ -15,4 +15,9 @@ function voyelleMaj(texte){
     return texte2;
 }
 
-console.log(voyelleMaj(citationRoiHeenok));
+function capConsonant(texte){
+    return texte.replace(/[^aeiouy]/gi, voyelle => voyelle.toUpperCase());
+}
+
+console.log(consonneMaj(citationRoiHeenok));
+console.log(capConsonant(citationRoiHeenok));

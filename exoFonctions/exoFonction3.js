@@ -9,4 +9,9 @@ function supprVoyelle(tableau){
     return tab2;
 }
 
+function removeVowels(texte){
+    return console.log(texte.replace(/[aeiouy]/gi, ''));
+}
+
 console.log(supprVoyelle(tab));
+removeVowels("Bonjour");

@@ -15,4 +15,9 @@ function voyelleMaj(texte){
     return texte2;
 }
 
+function capVowel(texte){
+    return texte.replace(/[aeiouy]/gi, voyelle => voyelle.toUpperCase());
+}
+
 console.log(voyelleMaj(citationMorsay));
+console.log(capVowel(citationMorsay));

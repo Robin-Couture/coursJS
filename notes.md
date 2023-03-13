@@ -35,6 +35,7 @@ https://developer.mozilla.org/fr/docs/Web/JavaScript
 - ``.split('string')`` Éclate une chaîne en fonction du paramètre (mettre '' éclate toutes les lettres une par une)
 - ``.includes(x)`` Vérifie si la valeur mise en argument est présente dans le tableau
 - ``...tableau`` éclate les valeurs du tableau (peut aussi s'utiliser avec un objet)
+- ``.map()`` Crée un nouveau tableau avec la transformation mise en argument
 
 # Les bases du JavaScript
 
@@ -203,3 +204,7 @@ Dans ce cas là le return sera mis automatiquement.
 Si jamais j'ai plus d'une instruction je dois mettre des {} et un return dans ma fonction.
 
 Je peux mettre une fonction en paramètre d'une fonction.
+
+# Regex (my beloved)
+
+site pour créer des patternes de recherche : https://www.regexpal.com/
