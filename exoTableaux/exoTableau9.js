@@ -1,11 +1,14 @@
 const tabRandom = [];
 
-for(index = 0; index < 10; index++){
-    tabRandom.push(Math.floor(Math.random() * 10));
+function remplirRandom(tableau){
+    for(index = 0; index < 10; index++){
+        tableau.push(Math.floor(Math.random()* 10) + 1);
+    }
+
+    return tableau
 }
 
-min = Math.min(...tabRandom);
-max = Math.max(...tabRandom);
+remplirRandom(tabRandom);
 
 console.log("Nombres dans la liste :", tabRandom);
-console.log("Min =", min, "Max =", max);
+console.log("Min =", Math.min(...tabRandom), "Max =", Math.max(...tabRandom));

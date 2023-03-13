@@ -4,6 +4,9 @@ for(index = 0; index < Tab.length; index++){
     console.log(Tab[index]);
 }
 
+Tab.forEach((index = 0)=>{
+    console.log(index)
+});
 
 
 

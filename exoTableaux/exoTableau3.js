@@ -6,3 +6,12 @@ for(index = 0; index < nbPair.length; index++){
 }
 
 console.log('somme des nombres du tableaux =', calcul);
+
+calcul = 0;
+
+nbPair.forEach((chiffre)=>{
+    calcul = calcul + chiffre;
+    return calcul;
+})
+
+console.log("calcul du foreach :", calcul)
