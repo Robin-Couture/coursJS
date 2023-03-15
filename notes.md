@@ -208,3 +208,37 @@ Je peux mettre une fonction en paramètre d'une fonction.
 # Regex (my beloved)
 
 site pour créer des patternes de recherche : https://www.regexpal.com/
+
+# Les Promesses
+
+Les Promise sont des objets en JS qu'on utilise en tant que placeholder pour des données qu'ont obtiendra après un certain temps. 
+
+Une promise s'écrit de cette façon :
+``` javascript
+const variable = new Promise((succès, rejet) => {
+    succès(action si succès)
+    rejet(action si rejet)
+});
+```
+
+Exemple : 
+``` javascript
+const promise = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        const randomNumber = Math.floor(Math.random() * 10);
+        if(randomNumber % 2 === 0){
+            resolve(randomNumber);
+        } else {
+            reject(new Error('Le nombre est impair.'));
+        }
+    }, 1000);
+})
+
+promise
+    .then(result => console.log(`Le nombre est ${result}.`));
+    .catch(error => console.error(error.message));
+```
+
+# API Fetch
+
+L'API Fect fournit une interface pour la récupération de ressources.
